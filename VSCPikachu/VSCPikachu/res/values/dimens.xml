@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	
+	<dimen name="buttons_height">40dp</dimen>
+	
+	<dimen name="width_help">20dp</dimen>
+	
+	<dimen name="height_tv_abcd">25dp</dimen>
+	<dimen name="height_tv_abcd_minus">-25dp</dimen>
+	
+	<dimen name="avatar_size">60dp</dimen>
+	<dimen name="character_size">100dp</dimen>
+	
+	<dimen name="text_size_scores">14sp</dimen>
+</resources>

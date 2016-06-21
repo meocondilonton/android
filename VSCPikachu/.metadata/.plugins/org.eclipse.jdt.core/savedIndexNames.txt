@@ -1,0 +1,16 @@
+INDEX VERSION 1.126+/Users/nguyennhatkhang/Desktop/long/android/VSCPikachu/.metadata/.plugins/org.eclipse.jdt.core
+3838132653.index
+607824089.index
+672929334.index
+892577061.index
+1621692150.index
+1415693123.index
+2931169673.index
+2107940818.index
+3848462231.index
+2787544647.index
+2546082507.index
+2525107949.index
+2741727132.index
+2158556213.index
+3091605018.index

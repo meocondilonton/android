@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vn.clevernet.android.sdk.ClevernetView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cad="http://schemas.android.com/apk/res/vn.vsc.game.pikachu"
+    android:id="@+id/cadad"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    cad:animation="fade"
+    cad:backgroundColor="#555"
+    cad:bannerType="fullscreen"
+    cad:deliverOnlyText="false"
+    cad:textColor="#FF1F1F"
+    cad:textSize="20" />

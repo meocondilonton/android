@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dlg_2"
+    >
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/confirm_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_margin="5dip"
+        android:background="@drawable/bg_answer_2"
+        android:layout_alignParentTop="true"
+        />
+    
+    <LinearLayout 
+        android:layout_below="@id/confirm_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        >
+        <Button 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/selector_bt_confirm_ok"
+	    android:id="@+id/confirm_ok"
+	    android:layout_weight="1"
+	    android:text="@string/ok"
+	    android:textSize="@dimen/text_size_scores"
+	    />
+	<Button 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/selector_bt_confirm_cancel"
+	    android:id="@+id/confirm_cancel"
+	    android:layout_weight="1"
+	    android:text="@string/cancel"
+	    android:textSize="@dimen/text_size_scores"
+	    />
+	<Button 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/selector_bt_confirm_cancel"
+	    android:id="@+id/confirm_others"
+	    android:layout_weight="1"
+	    android:text="@string/cancel"
+	    android:visibility="gone"
+	    android:textSize="@dimen/text_size_scores"
+	    />
+    </LinearLayout>
+    
+	
+</RelativeLayout>
