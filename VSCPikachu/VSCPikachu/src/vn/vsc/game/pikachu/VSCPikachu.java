@@ -57,9 +57,9 @@ import android.widget.Toast;
 
 import com.easyndk.classes.AndroidNDKHelper;
 import com.google.android.gcm.GCMRegistrar;
-//import com.google.android.gms.ads.AdListener;
-//import com.google.android.gms.ads.AdRequest;
-//import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 
 public class VSCPikachu extends Cocos2dxActivity implements Observer {
 	private DlgConfirm dlgConfirm;
@@ -73,22 +73,26 @@ public class VSCPikachu extends Cocos2dxActivity implements Observer {
 		initNotification();
 		initViews();
 		
-//		interstitial = new InterstitialAd(this);
-//		interstitial.setAdListener(new AdListener() {
+		interstitial = new InterstitialAd(this);
+		interstitial.setAdListener(new AdListener() {
 
-//			@Override
-//			public void onAdClosed() {
-//				// TODO Auto-generated method stub
-//				super.onAdClosed();
-//				AndroidNDKHelper.SendMessageWithParameters("callExit", null);
-//			}
+			@Override
+			public void onAdClosed() {
+				// TODO Auto-generated method stub
+				super.onAdClosed();
+				AndroidNDKHelper.SendMessageWithParameters("callExit", null);
+			}
 			
-//		});
-//		interstitial.setAdUnitId("a152e31f885508c");
+		});
+		interstitial.setAdUnitId("ca-app-pub-5869820531988531/7179288209");
 //		AdRequest adRequest = new AdRequest.Builder().build();
-//		interstitial.loadAd(adRequest);
+		AdRequest adRequest = new AdRequest.Builder()
+        .addTestDevice("866636024233433")
+	    .build();
+		interstitial.loadAd(adRequest);
 	}
-//	private InterstitialAd interstitial;
+	private InterstitialAd interstitial;
+	 
 	private void initViews() {
 		FrameLayout.LayoutParams adViewLp = new FrameLayout.LayoutParams(
 				FrameLayout.LayoutParams.MATCH_PARENT,
@@ -104,10 +108,10 @@ public class VSCPikachu extends Cocos2dxActivity implements Observer {
 	@Override
 	public void startActivity(Intent intent) {
 		super.startActivity(intent);
-		// AndroidNDKHelper.SendMessageWithParameters(
-		// "callExit",
-		// null);
-		// finish();
+//		 AndroidNDKHelper.SendMessageWithParameters(
+//		 "callExit",
+//		 null);
+//		 finish();
 	}
 
 	private void initNotification() {
@@ -519,9 +523,9 @@ public class VSCPikachu extends Cocos2dxActivity implements Observer {
 				Intent intent = new Intent(this, CrossSaleActivity.class);
 				startActivity(intent);
 			} else{
-//				if (interstitial.isLoaded() ) {
-//					interstitial.show();
-//				} else finish();
+				if (interstitial.isLoaded() ) {
+					interstitial.show();
+				} else finish();
 				
 			}
 		} else {
