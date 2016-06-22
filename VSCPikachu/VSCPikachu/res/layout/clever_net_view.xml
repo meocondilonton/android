@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <vn.clevernet.android.sdk.ClevernetView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:cad="http://schemas.android.com/apk/res/vn.vsc.game.pikachu"
+    xmlns:cad="http://schemas.android.com/apk/res/vn.philong.game.pikachunew"
     android:id="@+id/cadad"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"

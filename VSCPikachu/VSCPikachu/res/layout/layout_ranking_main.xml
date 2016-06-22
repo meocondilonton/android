@@ -5,11 +5,11 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
-    <fragment android:name="vn.vsc.game.pikachu.facebook.FragmentRanking"
+    <fragment android:name="vn.philong.game.pikachunew.facebook.FragmentRanking"
           android:id="@+id/selectionFragment"
           android:layout_width="match_parent"
           android:layout_height="match_parent" />
-    <fragment android:name="vn.vsc.game.pikachu.facebook.FragmentLogin"
+    <fragment android:name="vn.philong.game.pikachunew.facebook.FragmentLogin"
           android:id="@+id/splashFragment"
           android:layout_width="match_parent"
           android:layout_height="match_parent" />
