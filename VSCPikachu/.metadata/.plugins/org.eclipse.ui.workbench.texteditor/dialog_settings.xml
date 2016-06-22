@@ -3,26 +3,29 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="265" key="DIALOG_WIDTH"/>
 		<item value="129" key="DIALOG_Y_ORIGIN"/>
-		<item value="399" key="DIALOG_HEIGHT"/>
 		<item value="1030" key="DIALOG_X_ORIGIN"/>
+		<item value="399" key="DIALOG_HEIGHT"/>
 		<item value="1|.Helvetica Neue DeskInterface|11.0|0|COCOA|1|.HelveticaNeueDeskInterface-Regular" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="isRegEx"/>
 		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
 		<item value="" key="selection"/>
 		<list key="findhistory">
+			<item value="vn.vsc.game.pikachu"/>
+			<item value="checkUpdate"/>
+			<item value="dlgInput"/>
+			<item value="setEGLConfigChooser"/>
 			<item value="AdRequest adRequest = new AdRequest.Builder()&#x0A;    .addTestDevice(&quot;YOUR_DEVICE_HASH&quot;)&#x0A;    .build();"/>
 			<item value="com.google.android.gms.ads.AdActivity"/>
 			<item value="com.google.android.gms.versio"/>
 			<item value="onBackPressed"/>
-			<item value="Interstitial"/>
-			<item value="interstitial"/>
 		</list>
 		<list key="replacehistory">
+			<item value="vn.philong.game.pikachunew"/>
 		</list>
 	</section>
 </section>
