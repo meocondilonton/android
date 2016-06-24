@@ -191,7 +191,7 @@
                       "capInsetsY": 0,
                       "fileName": null,
                       "fileNameData": {
-                        "path": "text_ca_nhan.png",
+                        "path": "text_mua_xu.png",
                         "plistFile": "controls.plist",
                         "resourceType": 1
                       },
@@ -427,12 +427,6 @@
                       "capInsetsWidth": 0,
                       "capInsetsX": 0,
                       "capInsetsY": 0,
-                      "fileName": null,
-                      "fileNameData": {
-                        "path": "text_xu_mien_phi.png",
-                        "plistFile": "controls.plist",
-                        "resourceType": 1
-                      },
                       "scale9Enable": false,
                       "scale9Height": 38,
                       "scale9Width": 130
@@ -477,24 +471,7 @@
                   "capInsetsWidth": 0,
                   "capInsetsX": 0,
                   "capInsetsY": 0,
-                  "disabled": null,
-                  "disabledData": {
-                    "path": "bt_nornal.png",
-                    "plistFile": "controls.plist",
-                    "resourceType": 1
-                  },
-                  "normal": null,
-                  "normalData": {
-                    "path": "bt_nornal.png",
-                    "plistFile": "controls.plist",
-                    "resourceType": 1
-                  },
-                  "pressed": null,
-                  "pressedData": {
-                    "path": "bt_pressed.png",
-                    "plistFile": "controls.plist",
-                    "resourceType": 1
-                  },
+                   
                   "scale9Enable": false,
                   "scale9Height": 76,
                   "scale9Width": 202
@@ -547,11 +524,6 @@
                       "capInsetsX": 0,
                       "capInsetsY": 0,
                       "fileName": null,
-                      "fileNameData": {
-                        "path": "text_xep_hang.png",
-                        "plistFile": "controls.plist",
-                        "resourceType": 1
-                      },
                       "scale9Enable": false,
                       "scale9Height": 46,
                       "scale9Width": 112
@@ -596,24 +568,6 @@
                   "capInsetsWidth": 0,
                   "capInsetsX": 0,
                   "capInsetsY": 0,
-                  "disabled": null,
-                  "disabledData": {
-                    "path": "bt_pressed.png",
-                    "plistFile": "controls.plist",
-                    "resourceType": 1
-                  },
-                  "normal": null,
-                  "normalData": {
-                    "path": "bt_nornal.png",
-                    "plistFile": "controls.plist",
-                    "resourceType": 1
-                  },
-                  "pressed": null,
-                  "pressedData": {
-                    "path": "bt_pressed.png",
-                    "plistFile": "controls.plist",
-                    "resourceType": 1
-                  },
                   "scale9Enable": false,
                   "scale9Height": 76,
                   "scale9Width": 202

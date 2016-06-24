@@ -15,14 +15,14 @@
 		<item value="false" key="wholeword"/>
 		<item value="" key="selection"/>
 		<list key="findhistory">
+			<item value="bt_free_xu"/>
+			<item value="free_xu"/>
+			<item value="remind_login_fb"/>
+			<item value="bạn phải"/>
+			<item value="&lt;string name=&quot;confirm_share_fb_win&quot;&gt;Bạn có đã vượt qua level %s, share thành tích lên tường facebook để lấy 1 xu?&lt;/string&gt;"/>
+			<item value="sharefb"/>
 			<item value="vn.vsc.game.pikachu"/>
 			<item value="checkUpdate"/>
-			<item value="dlgInput"/>
-			<item value="setEGLConfigChooser"/>
-			<item value="AdRequest adRequest = new AdRequest.Builder()&#x0A;    .addTestDevice(&quot;YOUR_DEVICE_HASH&quot;)&#x0A;    .build();"/>
-			<item value="com.google.android.gms.ads.AdActivity"/>
-			<item value="com.google.android.gms.versio"/>
-			<item value="onBackPressed"/>
 		</list>
 		<list key="replacehistory">
 			<item value="vn.philong.game.pikachunew"/>

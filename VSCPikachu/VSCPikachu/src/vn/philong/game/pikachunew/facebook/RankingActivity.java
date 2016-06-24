@@ -189,7 +189,7 @@ public class RankingActivity extends FragmentActivity {
 	}
 
 	private static final List<String> PERMISSIONS = Arrays
-			.asList("publish_actions","publish_stream");
+			.asList("publish_actions","publish_stream" ,"public_profile", "user_friends");
 	private boolean pendingPublishReauthorization = false;
 
 	private boolean isSubsetOf(Collection<String> subset,

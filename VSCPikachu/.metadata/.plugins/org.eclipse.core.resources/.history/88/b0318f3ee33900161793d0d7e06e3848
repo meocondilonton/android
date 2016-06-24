@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Onet connect animal 2016</string>
+    
+    <string name="alert_content">Bạn đang chơi game Onet connect animal 2016</string>
+    <string name="fb_url">https://play.google.com/store/apps/details?id=vn.vsc.game.pikachu</string>
+    <string name="fb_link_img">http://static.9game.com.vn/files/lgkk/pikachu.png</string>
+    
+    <string name="error_no_data">"Không có dữ liệu"</string>
+    <string name="error_action_try_again">"\nVui lòng thử lại sau."</string>
+    <string name="error_action_tap_to_retry">"\nNhấn để thử lại."</string>
+    <string name="error_no_connection">Bạn đã bị mất kết nối.</string>
+    <string name="error_connection_time_out">Đường truyền quá yếu.</string>
+    <string name="error_network_error">Lỗi kết nối.</string>
+    <string name="error_server_error">Máy chủ đang bảo trì</string>
+    <string name="error_not_exist_user">Tài khoản chưa được kích hoạt</string>
+    <string name="error_unknown_error">Có lỗi xảy ra.</string>
+    <string name="error_card_invalid">Thẻ cào không hợp lệ</string>
+    <string name="error_card_used">Thẻ cào đã được sử dụng</string>
+     <string name="send_sms_failed">Gửi tin nhắn thất bại</string>
+     <string name="send_sms_success">Gửi tin nhắn thành công</string>
+    <string name="can_not_buy_help">Bạn có thể mua thêm sau khi sử dụng hết quyền trợ giúp đang có</string>
+    <string name="text_ask_buy_helps">Hãy mua thêm 4 quyền để chinh phục nhé! Chỉ 15,000 thôi!</string>
+    <string name="text_ask_buy_helps_1">Hãy mua thêm 4 quyền để chinh phục nhé! Chỉ 10 xu thôi! Hiện bạn đang có %s xu</string>
+    <string name="confirm_questions">%s có phải là câu trả lời cuối cùng của bạn không?</string>
+    <string name="confirm_share_fb">Bạn có muốn share lên tường facebook để lấy 1 xu không?</string>
+    <string name="confirm_share_fb_win">Bạn có đã vượt qua level %s, share thành tích lên tường facebook để lấy 1 xu?</string>
+    <string name="getted_xu_from_fb">Hôm nay bạn đã share facebook rồi</string>
+    <string name="text_confirm_out">Thoát ngang sẽ bị trừ điểm và hạ xuống 1 câu hỏi, bạn có muốn tiếp tục?</string>
+    <string name="info_point">Điểm: %s</string>
+    <string name="info_help_count">Số quyền: %s</string>
+    <string name="ranking_time">Thời gian</string>
+    <string name="info_level">Level: %s</string>
+    <string name="cancel">Hủy</string>
+    <string name="ok">OK</string>
+    <string name="info_question">Question: %s</string>
+    <string name="text_login_fb"> Bạn hãy đăng nhập facebook để xếp hạng với bạn bè </string>
+    <string name="text_play_all_level">Bạn đã chơi hết season rồi, vui lòng đợi phiên bản tiếp theo</string>
+    <string name="radio_ranking_friend">Top bạn bè</string>
+    <string name="radio_ranking_world">Top thế giới</string>
+    <string name="sms">Tin nhắn</string>
+    <string name="level_finished">Bạn đã vượt qua level này rồi</string>
+    <string name="ranking_all">Xếp hạng thế giới: %s</string>
+    <string name="ranking_friend">Xếp hạng bạn bè: %s</string>
+    <string name="confirm_download">"Ai là triệu phú 2015" đã có phiên bản mới</string>
+    <string name="confirm_download_crossale">Tải về</string>
+    <string name="download">Tải xuống</string>
+    <string name="update_version">Cập nhật phiên bản</string>
+    <string name="downloading_new_version">Đang tải phiên bản mới</string>
+    <string name="connection_problem">Vui lòng kiểm tra lại kết nối mạng</string>
+    <string name="ranking_usn">Tên user</string>
+    <string name="ranking_point">Điểm</string>
+    <string name="ranking_level">Level</string>
+    <string name="confirm_exit">Bấm lần nữa để thoát</string>
+    
+    <string name="sms_2k">6297 NAPLGKK</string>
+    <string name="sms_15k">6797 NAPLGKK</string>
+   	<string name="sms_5k">6597 NAPLGKK</string>
+    <string name="hint_input_code">Vui lòng nhập mã pin</string>
+    <string name="hint_input_serial">Vui lòng nhập mã thẻ</string>
+    <string name="text_title_input">Nạp thẻ</string>
+    <string name="text_sms">Tin nhắn 15.000</string>
+    <string name="text_viettel">Viettel</string>
+    <string name="text_vinaphone">Vinaphone</string>
+    <string name="text_mobiphone">Mobifone</string>
+    <string name="text_buy_xu">3 phút = 10 xu \n 5 gợi ý = 10 xu \n\n Tin nhắn 15k = 10 Xu \n</string>
+    <string name="text_buy_xu_1">Thẻ cào: \n 10k = 10Xu \n 20k = 20 Xu \n 50k = 60 Xu \n 100k = 140 Xu \n 200k = 320 Xu \n 500k = 1,000 Xu</string>
+    <string name="buy_xu_success">Bạn đã mua xu thành công, được cộng thêm %s</string>
+    <string name="use_xu_success">Sử dụng xu thành công, bạn còn  %s xu</string>
+    <string name="get_xu_success">Bạn đã nhận thêm được %1$s xu, số xu hiện tại: %2$s</string>
+    <string name="purchasing">Đang nạp thẻ</string>
+    <string name="waiting_response_sms">Bạn đã gửi tin nhắn, vui lòng đợi giây lát</string>
+    <string name="sharing_fb">Đang share lên tường facebook của bạn, vui lòng chờ</string>
+    <string name="time_left">Bạn còn 30 giây nữa</string>
+    <string name="remind_login_fb">Bạn phải đăng nhập facebook trước để thực hiện tính năng này</string>
+    
+    <string name="app_id">1028777810489379</string>
+    
+    <string name="sharing_get_xu_1">Bạn có biết chơi Pikachu giúp tăng cường trí nhớ không? Khám phá ngay</string>
+    <string name="sharing_get_xu_2">Game Pikachu kinh điển - game đẹp cho người đẹp. Nếu là người đẹp thì vô chơi ngay!</string>
+    <string name="sharing_get_xu_3">Đang chán và muốn giải tán? Vào chơi Pikachu với mềnh cho đỡ chán nào!</string>
+    
+    <string name="sharing_win_1">May VL, tý nữa thì không qua được. Game Pikachu này khó ra phết</string>
+    <string name="sharing_win_2">Qua bài rồi, sắp phá đảo rồi! Ai vô phá cùng mềnh không?</string>
+    <string name="sharing_win_3">Mình qua bài rồi, bạn có qua mặt được mình không? Thử ngay Pikachu nè!</string>
+    
+    <string name="input_phone_number_valid">Số điện thoại phải có ít nhất 10 số</string>
+	<string name="input_phone_number">Nhập số điện thoại bạn sẽ nhận được 5 xu</string>
+	<string name="hint_input_phone">Số điện thoại</string>
+</resources>

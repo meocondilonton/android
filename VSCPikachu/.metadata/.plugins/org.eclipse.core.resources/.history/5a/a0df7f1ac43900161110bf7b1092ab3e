@@ -21,7 +21,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
  ****************************************************************************/
-package vn.vsc.game.pikachu;
+package vn.philong.game.pikachunew;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -35,18 +35,18 @@ import org.cocos2dx.lib.Cocos2dxGLSurfaceView;
 import org.json.JSONObject;
 import org.json.JSONStringer;
 
-import vn.vsc.game.pikachu.dc.DataHelper;
-import vn.vsc.game.pikachu.dc.Result;
-import vn.vsc.game.pikachu.dlg.DialogInput;
-import vn.vsc.game.pikachu.dlg.DlgConfirm;
-import vn.vsc.game.pikachu.facebook.RankingActivity;
-import vn.vsc.game.pikachu.persional.PersonalActivity;
-import vn.vsc.game.pikachu.utility.FBUtils;
-import vn.vsc.game.pikachu.utility.LogUtils;
-import vn.vsc.game.pikachu.utility.ResourceManager;
-import vn.vsc.game.pikachu.utility.SMSUtils;
-import vn.vsc.game.pikachu.utility.Util;
-import vn.vsc.game.pikachu.view.BroadcaseMessage;
+import vn.philong.game.pikachunew.dc.DataHelper;
+import vn.philong.game.pikachunew.dc.Result;
+import vn.philong.game.pikachunew.dlg.DialogInput;
+import vn.philong.game.pikachunew.dlg.DlgConfirm;
+import vn.philong.game.pikachunew.facebook.RankingActivity;
+import vn.philong.game.pikachunew.persional.PersonalActivity;
+import vn.philong.game.pikachunew.utility.FBUtils;
+import vn.philong.game.pikachunew.utility.LogUtils;
+import vn.philong.game.pikachunew.utility.ResourceManager;
+import vn.philong.game.pikachunew.utility.SMSUtils;
+import vn.philong.game.pikachunew.utility.Util;
+import vn.philong.game.pikachunew.view.BroadcaseMessage;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -57,9 +57,9 @@ import android.widget.Toast;
 
 import com.easyndk.classes.AndroidNDKHelper;
 import com.google.android.gcm.GCMRegistrar;
-//import com.google.android.gms.ads.AdListener;
-//import com.google.android.gms.ads.AdRequest;
-//import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.InterstitialAd;
 
 public class VSCPikachu extends Cocos2dxActivity implements Observer {
 	private DlgConfirm dlgConfirm;
@@ -73,22 +73,28 @@ public class VSCPikachu extends Cocos2dxActivity implements Observer {
 		initNotification();
 		initViews();
 		
-//		interstitial = new InterstitialAd(this);
-//		interstitial.setAdListener(new AdListener() {
-
-//			@Override
-//			public void onAdClosed() {
-//				// TODO Auto-generated method stub
-//				super.onAdClosed();
-//				AndroidNDKHelper.SendMessageWithParameters("callExit", null);
-//			}
-			
-//		});
-//		interstitial.setAdUnitId("a152e31f885508c");
+	
+		interstitial = new InterstitialAd(this);
+		
+		interstitial.setAdUnitId("ca-app-pub-5869820531988531/7179288209");
 //		AdRequest adRequest = new AdRequest.Builder().build();
-//		interstitial.loadAd(adRequest);
+		AdRequest adRequest = new AdRequest.Builder()
+//        .addTestDevice("866636024233433")
+	    .build();
+		interstitial.loadAd(adRequest);
+		
+		interstitial.setAdListener(new AdListener() {
+			@Override
+			public void onAdClosed() {
+				// TODO Auto-generated method stub
+				super.onAdClosed();
+				AndroidNDKHelper.SendMessageWithParameters("callExit", null);
+			}
+			
+		});
 	}
-//	private InterstitialAd interstitial;
+	private InterstitialAd interstitial;
+	 
 	private void initViews() {
 		FrameLayout.LayoutParams adViewLp = new FrameLayout.LayoutParams(
 				FrameLayout.LayoutParams.MATCH_PARENT,
@@ -99,15 +105,17 @@ public class VSCPikachu extends Cocos2dxActivity implements Observer {
 	public void onResume() {
 		super.onResume();
 		Util.clearAlertNotification();
+	
 	}
 
 	@Override
 	public void startActivity(Intent intent) {
 		super.startActivity(intent);
-		// AndroidNDKHelper.SendMessageWithParameters(
-		// "callExit",
-		// null);
-		// finish();
+		 
+//		 AndroidNDKHelper.SendMessageWithParameters(
+//		 "callExit",
+//		 null);
+//		 finish();
 	}
 
 	private void initNotification() {
@@ -512,18 +520,12 @@ public class VSCPikachu extends Cocos2dxActivity implements Observer {
 		long currentTime = System.currentTimeMillis();
 		if (currentTime - lastPressExit < DELAY_TIME_EXIT) {
 			lastPressExit = 0;
-			LogUtils.e(getClass(),
-					"isCrossSale:" + CrossSaleManager.isCrossSale());
-			if (CrossSaleManager.isCrossSale()) 
-			{
-				Intent intent = new Intent(this, CrossSaleActivity.class);
-				startActivity(intent);
-			} else{
-//				if (interstitial.isLoaded() ) {
-//					interstitial.show();
-//				} else finish();
-				
-			}
+		
+				if (interstitial.isLoaded() ) {
+					interstitial.show();
+					 
+				} else finish();
+
 		} else {
 			lastPressExit = currentTime;
 			Toast.makeText(this, R.string.confirm_exit, DELAY_TIME_EXIT).show();

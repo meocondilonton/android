@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Pikachu Vietnam</string>
+    <string name="app_name">Onet connect animal 2016</string>
     
-    <string name="alert_content">Bạn đang chơi game Pikachu Vietnam</string>
-    <string name="fb_url">https://play.google.com/store/apps/details?id=vn.vsc.game.pikachu</string>
-    <string name="fb_link_img">http://static.9game.com.vn/files/lgkk/pikachu.png</string>
+    <string name="alert_content">Bạn đang chơi game Onet connect animal 2016</string>
+    <string name="fb_url">https://google.com</string>
+    <string name="fb_link_img">http://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/250px-025Pikachu.png</string>
     
     <string name="error_no_data">"Không có dữ liệu"</string>
     <string name="error_action_try_again">"\nVui lòng thử lại sau."</string>
@@ -74,7 +74,7 @@
     <string name="time_left">Bạn còn 30 giây nữa</string>
     <string name="remind_login_fb">Bạn phải đăng nhập facebook trước để thực hiện tính năng này</string>
     
-    <string name="app_id">420643738066809</string>
+    <string name="app_id">1028777810489379</string>
     
     <string name="sharing_get_xu_1">Bạn có biết chơi Pikachu giúp tăng cường trí nhớ không? Khám phá ngay</string>
     <string name="sharing_get_xu_2">Game Pikachu kinh điển - game đẹp cho người đẹp. Nếu là người đẹp thì vô chơi ngay!</string>

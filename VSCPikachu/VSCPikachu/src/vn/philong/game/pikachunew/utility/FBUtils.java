@@ -3,9 +3,12 @@ package vn.philong.game.pikachunew.utility;
 import java.io.ByteArrayOutputStream;
 
 import vn.philong.game.pikachunew.R;
+import vn.philong.game.pikachunew.VSCPikachu;
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.Toast;
 
 import com.facebook.HttpMethod;
 import com.facebook.Request;
@@ -59,7 +62,7 @@ public class FBUtils {
 			request.executeAsync();
 		}
 	}
-	public static void shareFB(Activity a,String message,final Runnable callback){
+	public static void shareFB( Activity a,String message,final Runnable callback){
 		final Bundle params = new Bundle();
 		params.putString("caption", "VSC");
 		params.putString("message", message);
@@ -77,8 +80,11 @@ public class FBUtils {
 					request.setCallback(new Request.Callback() {
 					    @Override
 					    public void onCompleted(Response response) {
+					    	Log.e("VSCPIKACHU", "onCompleted1:"+ response.getError());
+					    	 
 					        if (response.getError() == null) {
 					            // Tell the user success!
+					        	
 					        	callback.run();
 					        }
 					    }
@@ -91,6 +97,7 @@ public class FBUtils {
 			request.setCallback(new Request.Callback() {
 			    @Override
 			    public void onCompleted(Response response) {
+			    	Log.e("VSCPIKACHU", "onCompleted1:"+ response.getError());
 			        if (response.getError() == null) {
 			            // Tell the user success!
 			        	callback.run();

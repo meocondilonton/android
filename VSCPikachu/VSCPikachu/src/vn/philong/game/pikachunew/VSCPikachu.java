@@ -69,7 +69,7 @@ public class VSCPikachu extends Cocos2dxActivity implements Observer {
 		AndroidNDKHelper.SetNDKReciever(this);
 		dlgConfirm = new DlgConfirm(this);
 		dlgInput = new DialogInput(this);
-		checkUpdate();
+//		checkUpdate();
 		initNotification();
 		initViews();
 		
@@ -346,95 +346,109 @@ public class VSCPikachu extends Cocos2dxActivity implements Observer {
 	public void callbackBroadcast(JSONObject prms){
 		BroadcaseMessage.startMessage();
 	}
+	
 	public void nativeCall(JSONObject prms) {
 		try {
 			String method = prms.getString("method");
-			if (method.equals("o")) {
-				// open persional
-				Intent intent = new Intent(this, PersonalActivity.class);
-				startActivity(intent);
-			} else if (method.equals("p")) {
+			 if (method.equals("o")) {
 				// purcharse
 				Intent intent = new Intent(this, CardActivity.class);
 				startActivity(intent);
-			} else if (method.equals("a")) {
-				// arrange
-				Intent intent = new Intent(this, RankingActivity.class);
-				startActivity(intent);
-			} else if (method.equals("f")) {
-				// free xu
-				ResourceManager.requestLevel();
-				if (!FBUtils.isLoginFB()) {
-					dlgConfirm.show(getString(R.string.remind_login_fb),
-							new Runnable() {
-
-								@Override
-								public void run() {
-									Intent intent = new Intent(VSCPikachu.this,
-											RankingActivity.class);
-									startActivity(intent);
-								}
-							}, true);
-					return;
-				}
-				dlgConfirm.show(getString(R.string.confirm_share_fb),
-						new Runnable() {
-
-							@Override
-							public void run() {
-								Toast.makeText(VSCPikachu.this,
-										getString(R.string.sharing_fb),
-										Toast.LENGTH_SHORT).show();
-
-								FBUtils.shareFB(
-										VSCPikachu.this,
-										getString(randomRes[(int) (System
-												.currentTimeMillis() % randomRes.length)]),
-										new Runnable() {
-
-											@Override
-											public void run() {
-												Date date = Calendar
-														.getInstance()
-														.getTime();
-												String dateString = formatDate(date);
-												if (!ResourceManager
-														.isSavedDate(dateString)) {
-													ResourceManager.addXu(1);
-													ResourceManager
-															.saveDate(dateString);
-													ResourceManager.loadXu();
-													KaApp.getHandler()
-															.postDelayed(
-																	new Runnable() {
-
-																		@Override
-																		public void run() {
-																			// TODO
-																			// Auto-generated
-																			// method
-																			// stub
-																			KaApp.showToast(getString(
-																					R.string.get_xu_success,
-																					"1",
-																					ResourceManager
-																							.getXu()
-																							+ ""));
-																		}
-																	}, 100);
-												} else {
-													KaApp.showToast(R.string.getted_xu_from_fb);
-												}
-											}
-										});
-
-							}
-						}, true);
-			}
+			} 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
+	
+//	public void nativeCall(JSONObject prms) {
+//		try {
+//			String method = prms.getString("method");
+//			if (method.equals("o")) {
+//				// open persional
+//				Intent intent = new Intent(this, PersonalActivity.class);
+//				startActivity(intent);
+//			} else if (method.equals("p")) {
+//				// purcharse
+//				Intent intent = new Intent(this, CardActivity.class);
+//				startActivity(intent);
+//			} else if (method.equals("a")) {
+//				// arrange
+//				Intent intent = new Intent(this, RankingActivity.class);
+//				startActivity(intent);
+//			} else if (method.equals("f")) {
+//				// free xu
+//				ResourceManager.requestLevel();
+//				if (!FBUtils.isLoginFB()) {
+//					dlgConfirm.show(getString(R.string.remind_login_fb),
+//							new Runnable() {
+//
+//								@Override
+//								public void run() {
+//									Intent intent = new Intent(VSCPikachu.this,
+//											RankingActivity.class);
+//									startActivity(intent);
+//								}
+//							}, true);
+//					return;
+//				}
+//				dlgConfirm.show(getString(R.string.confirm_share_fb),
+//						new Runnable() {
+//
+//							@Override
+//							public void run() {
+//								Toast.makeText(VSCPikachu.this,
+//										getString(R.string.sharing_fb),
+//										Toast.LENGTH_SHORT).show();
+//
+//								FBUtils.shareFB(
+//										VSCPikachu.this,
+//										getString(randomRes[(int) (System
+//												.currentTimeMillis() % randomRes.length)]),
+//										new Runnable() {
+//
+//											@Override
+//											public void run() {
+//												Date date = Calendar
+//														.getInstance()
+//														.getTime();
+//												String dateString = formatDate(date);
+//												if (!ResourceManager
+//														.isSavedDate(dateString)) {
+//													ResourceManager.addXu(1);
+//													ResourceManager
+//															.saveDate(dateString);
+//													ResourceManager.loadXu();
+//													KaApp.getHandler()
+//															.postDelayed(
+//																	new Runnable() {
+//
+//																		@Override
+//																		public void run() {
+//																			// TODO
+//																			// Auto-generated
+//																			// method
+//																			// stub
+//																			KaApp.showToast(getString(
+//																					R.string.get_xu_success,
+//																					"1",
+//																					ResourceManager
+//																							.getXu()
+//																							+ ""));
+//																		}
+//																	}, 100);
+//												} else {
+//													KaApp.showToast(R.string.getted_xu_from_fb);
+//												}
+//											}
+//										});
+//
+//							}
+//						}, true);
+//			}
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//	}
 
 	@Override
 	public void update(Observable observable, Object data) {
